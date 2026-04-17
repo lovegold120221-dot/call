@@ -42,9 +42,9 @@ Edit the `.env` file with your credentials:
 
 ```env
 # LiveKit Configuration (provided)
-LIVEKIT_URL=wss://tts-mozilla-f1zttm7l.livekit.cloud
-LIVEKIT_API_KEY=APIRWWXA4MPYw6h
-LIVEKIT_API_SECRET=tPYEDRMpCJHcG1jXg7HQKnXhqqxVqPe9xCrMTcYc2BA
+LIVEKIT_URL=
+LIVEKIT_API_KEY=
+LIVEKIT_API_SECRET=
 
 # Google AI Configuration (replace with your key)
 GOOGLE_API_KEY=your_actual_google_api_key_here
