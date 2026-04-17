@@ -102,8 +102,7 @@ export default function AudioVisualizer({ className, agent }: AudioVisualizerPro
       
       <canvas
         ref={canvasRef}
-        className="w-full h-24 rounded bg-background/50"
-        style={{ imageRendering: 'crisp-edges' }}
+        className="audio-visualizer-canvas w-full h-24 rounded bg-background/50"
       />
     </div>
   )
