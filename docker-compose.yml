@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  csr-agent:
+    build: .
+    container_name: csr-agent
+    restart: unless-stopped
+    environment:
+      - LIVEKIT_URL=${LIVEKIT_URL}
+      - LIVEKIT_API_KEY=${LIVEKIT_API_KEY}
+      - LIVEKIT_API_SECRET=${LIVEKIT_API_SECRET}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - csr-network
+
+networks:
+  csr-network:
+    driver: bridge

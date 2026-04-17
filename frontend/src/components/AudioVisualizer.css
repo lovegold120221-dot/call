@@ -1,0 +1,4 @@
+.audio-visualizer-canvas {
+  border-radius: 8px;
+  background: hsl(var(--background) / 0.05);
+}

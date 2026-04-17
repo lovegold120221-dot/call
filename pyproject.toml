@@ -1,0 +1,17 @@
+[project]
+name = "csr-agent"
+version = "0.1.0"
+description = "Customer Service Representative Agent using LiveKit and Gemini Live API"
+authors = [{name = "CSR Agent Team"}]
+requires-python = ">=3.8"
+dependencies = [
+    "livekit-agents[google]~=1.4",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
